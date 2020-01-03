@@ -52,5 +52,3 @@ export default class IndexPage extends Component {
     )
   }
 }
-
-// export default IndexPage

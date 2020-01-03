@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Juno New App`,
-    description: `Minha descrição`,
+    description: `Landing page para lançamento de app fictício`,
     author: `@brunosaibert`,
   },
   plugins: [

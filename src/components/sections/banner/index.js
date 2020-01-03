@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import Image from "../../atoms/image";
 import Modal from "../../modal";
@@ -6,9 +6,6 @@ import Modal from "../../modal";
 import { Section, Title, Description } from './styles';
 
 export default function Banner() {
-
-  const [count, setCount] = useState(0);
-
   return (
     <Section>
       <div className="container">
@@ -24,7 +21,7 @@ export default function Banner() {
 
             <Modal />
           </div>
-          <div id="banner-image" className="col-12 col-sm-4 offset-sm-4 col-md-4 offset-md-0 col-lg-3 offset-lg-0">
+          <div id="banner-image" className="col-8 offset-2 col-sm-4 offset-sm-4 col-md-4 offset-md-0 col-lg-3 offset-lg-0">
             <Image filename="iphone-x.png" alt="Novo App" />
           </div>
         </div>

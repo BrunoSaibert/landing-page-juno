@@ -65,6 +65,10 @@ export default createGlobalStyle`
     :hover {
       color: inherit;
       opacity: 0.7;
+      
+      @media (max-width: ${props => props.theme.breakpoints.md}px) {
+        opacity: 1;
+      }
     }
   }
 `;

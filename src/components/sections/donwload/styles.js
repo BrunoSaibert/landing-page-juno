@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Section = styled.div`
   background: ${props => props.bgColor && (props.theme.color[props.bgColor] || props.theme.grayScale[props.bgColor])};
-  /* min-height: 500px; */
   padding: 100px 0 0;
 
   #donwload-image {
