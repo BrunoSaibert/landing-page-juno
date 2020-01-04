@@ -43,10 +43,10 @@ export default function Modal() {
                     <p>Nos informe seu dados de contato para confirmar o seu interesse no App Juno.</p>
                     <p>Assim que o aplicativo for disponibilizado, você será notificado.</p>
                     <FormGroup>
-                      <Input type="text" id="name" name="input-name" placeholder="Qual é o seu Nome?" />
+                      <Input type="text" id="name" name="input-name" placeholder="Qual é o seu Nome?" required="required" />
                     </FormGroup>
                     <FormGroup>
-                      <Input type="email" id="email" name="input-email" placeholder="Informe seu melhor E-mail" />
+                      <Input type="email" id="email" name="input-email" placeholder="Informe seu melhor E-mail" required="required" />
                     </FormGroup>
                   </Body>
                   <Footer>

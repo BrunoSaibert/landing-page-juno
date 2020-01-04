@@ -15,7 +15,14 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    `gatsby-plugin-sharp`, {
+      resolve: "gatsby-plugin-hubspot",
+      options: {
+        trackingCode: "6942353",
+        respectDNT: true,
+        productionOnly: true,
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
