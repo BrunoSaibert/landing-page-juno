@@ -20,7 +20,7 @@ export default class Header extends Component {
     };
   }
   componentDidMount = () => {
-    scrollFunction();
+    this.scrollFunction();
 
     document.addEventListener('scroll', this.scrollFunction());
 
