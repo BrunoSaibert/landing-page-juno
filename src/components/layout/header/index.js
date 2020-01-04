@@ -22,23 +22,25 @@ export default class Header extends Component {
   componentDidMount = () => {
     scrollFunction();
 
-    document.addEventListener('scroll', () => {
-      if (window.innerWidth > 1024) {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-          document.getElementById("navbar").style.height = "60px";
-          document.getElementById("logo").style.width = "80px";
-        } else {
-          document.getElementById("navbar").style.height = "80px";
-          document.getElementById("logo").style.width = "100px";
-        }
-      }
-      else {
-        document.getElementById("navbar").style.height = "60px";
-        document.getElementById("logo").style.width = "80px";
-      }
-    });
+    document.addEventListener('scroll', this.scrollFunction());
 
     document.addEventListener('scrollStart', this.handleCloseMenu, false);
+  }
+
+  scrollFunction = () => {
+    if (window.innerWidth > 1024) {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("navbar").style.height = "60px";
+        document.getElementById("logo").style.width = "80px";
+      } else {
+        document.getElementById("navbar").style.height = "80px";
+        document.getElementById("logo").style.width = "100px";
+      }
+    }
+    else {
+      document.getElementById("navbar").style.height = "60px";
+      document.getElementById("logo").style.width = "80px";
+    }
   }
 
   handleCloseMenu = () => {
