@@ -62,6 +62,7 @@ export const NavLink = styled.li`
       font-weight: bold;
       border-radius: 2px;
       transition: all 0.4s;
+      text-decoration: none;
 
       :hover{
         background: ${props => props.theme.color.primary_light};

@@ -24,7 +24,7 @@ const typography = (media = 0) => {
 
 
 export default createGlobalStyle`
-  /* @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap"); */
+  @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
 
   * {
     margin: 0;
