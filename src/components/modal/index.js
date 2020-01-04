@@ -29,7 +29,12 @@ export default function Modal() {
               variants={variants}
             >
               <Content>
-                <Form name="contact" method="POST" data-netlify="true">
+                <Form
+                  name="contact-form"
+                  method="post"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                >
                   <Header>
                     <h5 class="modal-title">Cadastro de lista de espera</h5>
                     <Close onClick={() => setIsOpen(false)}>&times;</Close>
@@ -38,10 +43,10 @@ export default function Modal() {
                     <p>Nos informe seu dados de contato para confirmar o seu interesse no App Juno.</p>
                     <p>Assim que o aplicativo for disponibilizado, você será notificado.</p>
                     <FormGroup>
-                      <Input type="text" id="name" name="name" placeholder="Qual é o seu Nome?" />
+                      <Input type="text" id="name" name="input-name" placeholder="Qual é o seu Nome?" />
                     </FormGroup>
                     <FormGroup>
-                      <Input type="email" id="email" name="email" placeholder="Informe seu melhor E-mail" />
+                      <Input type="email" id="email" name="input-email" placeholder="Informe seu melhor E-mail" />
                     </FormGroup>
                   </Body>
                   <Footer>
