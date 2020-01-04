@@ -26,7 +26,7 @@ export const Nav = styled.nav`
 export const Brand = styled.a`
   flex: 1;
 
-  img{
+  img {
     width: 100px;
     transition: 0.4s;
   }

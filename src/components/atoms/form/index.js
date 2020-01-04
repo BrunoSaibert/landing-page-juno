@@ -10,6 +10,7 @@ export function Form({ children, ...props }) {
     </FormStyle>
   );
 }
+
 export function FormGroup({ children, ...props }) {
   return (
     <FormGroupStyle {...props}>
@@ -17,8 +18,10 @@ export function FormGroup({ children, ...props }) {
     </FormGroupStyle>
   );
 }
+
 export function Input({ ...props }) {
   return (
     <InputStyle {...props} />
   );
 }
+
