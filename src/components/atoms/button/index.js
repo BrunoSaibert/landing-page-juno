@@ -14,7 +14,7 @@ export default function Button({ children, type = "button", ...props }) {
   return (
     <>
       <ButtonBase />
-      <ButtonStyle type={type} {...props}>
+      <ButtonStyle as={props.href ? "a" : "button"} type={type} {...props}>
         {children}
       </ButtonStyle>
     </>

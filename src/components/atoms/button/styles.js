@@ -37,12 +37,12 @@ export const ButtonBase = createGlobalStyle`
 export const ButtonStyle = styled.button.attrs({
   className: "btn"
 })`  
-  background: ${props => props.theme.color.secondary};
-  color: ${props => props.theme.grayScale.light};
+  background: ${props => props.theme.color.secondary} !important;
+  color: ${props => props.theme.grayScale.light} !important;
   
   :hover{
-    color: ${props => props.theme.grayScale.light_30};
-    background: ${props => props.theme.color.secondary_dark};
+    color: ${props => props.theme.grayScale.light_20} !important;
+    background: ${props => props.theme.color.secondary_dark} !important;
   }
   
 

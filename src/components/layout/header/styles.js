@@ -9,6 +9,8 @@ export const Section = styled.section`
   z-index: 10;
 
   @media (max-width: ${props => props.theme.breakpoints.md}px) {
+    box-shadow: 0 2px 8px ${props => props.theme.color.primary};
+
     .container {
       max-width: 100%;
     }
@@ -21,9 +23,13 @@ export const Nav = styled.nav`
   justify-content: space-between;
   height: 80px;
   transition: 0.4s;
+
+  @media (max-width: ${props => props.theme.breakpoints.md}px) {
+    height: 60px;
+  }
 `;
 
-export const Brand = styled.a`
+export const Brand = styled.div`
   flex: 1;
 
   img {
@@ -44,23 +50,25 @@ export const NavLink = styled.li`
   list-style: none;
   margin: 0 4px;
   
-  a{
-    height: 40px;
-    display: flex;
-    align-items: center;
-    padding: 8px 24px;
-    color: ${props => props.theme.grayScale.light};
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: bold;
-    border-radius: 2px;
-    transition: all 0.4s;
-
-    :hover{
-      background: ${props => props.theme.color.primary_light};
+  :not(.btn){
+    a {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      padding: 8px 24px;
       color: ${props => props.theme.grayScale.light};
-      text-decoration: none;
-      opacity: 1;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: bold;
+      border-radius: 2px;
+      transition: all 0.4s;
+
+      :hover{
+        background: ${props => props.theme.color.primary_light};
+        color: ${props => props.theme.grayScale.light};
+        text-decoration: none;
+        opacity: 1;
+      }
     }
   }
 `;
@@ -135,11 +143,10 @@ export const Collapse = styled.div`
         height: auto;
 
         .btn {
-          display: block;
           width: 100%;
         }
 
-          a {
+        a {
           justify-content: center;
           padding: 0;
           margin: 0;

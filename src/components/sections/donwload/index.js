@@ -35,7 +35,7 @@ export default function Donwload() {
           </div>
 
           <div id="donwload-image" className="col-8 offset-2 col-sm-4 offset-sm-4 col-md-4 offset-md-0 col-lg-3 offset-lg-1 order-last order-lg-last">
-            <Image filename="sistema-1.png" alt="Baixe o App" />
+            <Image filename="sistema-1-min.png" alt="Baixe o App" />
           </div>
         </div>
       </div>

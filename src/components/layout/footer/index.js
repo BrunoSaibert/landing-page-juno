@@ -25,27 +25,27 @@ export default function Footer() {
 
             <ul>
               <li>
-                <a href="#">
+                <a href="#link">
                   <FontAwesomeIcon icon={faFacebookF} />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#link">
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#link">
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#link">
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#link">
                   <FontAwesomeIcon icon={faYoutube} />
                 </a>
               </li>

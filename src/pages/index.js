@@ -20,7 +20,7 @@ export default class IndexPage extends Component {
           title="Descomplique pagamentos e otimize seus negócios"
           description="Emita cobranças por boleto bancário ou cartão de crédito de qualquer bandeira."
           image={{
-            src: "sistema-2.png",
+            src: "sistema-2-min.png",
             order: "first",
             alt: ""
           }}
@@ -31,7 +31,7 @@ export default class IndexPage extends Component {
           title="Reduza a inadimplência e lucre mais"
           description="Crie cobranças com juros e prazos específicos após vencimento."
           image={{
-            src: "sistema-3.png",
+            src: "sistema-3-min.png",
             alt: ""
           }}
         />
@@ -40,7 +40,7 @@ export default class IndexPage extends Component {
           title="Vantagens e facilidades para seus clientes"
           description="Pagamentos parcelados em até 12 vezes no cartão de crédito ou parcelados em até 24 vezes no carnê e boleto bancário."
           image={{
-            src: "sistema-2.png",
+            src: "sistema-2-min.png",
             order: "first",
             alt: ""
           }}

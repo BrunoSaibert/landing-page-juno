@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "gatsby"
 
-import Modal from "../../modal";
+import Button from "../../atoms/button";
 
 // Icons
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -19,28 +19,9 @@ export default class Header extends Component {
       toogleMenu: false
     };
   }
-  componentDidMount = () => {
-    this.scrollFunction();
 
-    document.addEventListener('scroll', this.scrollFunction());
-
-    document.addEventListener('scrollStart', this.handleCloseMenu, false);
-  }
-
-  scrollFunction = () => {
-    if (window.innerWidth > 1024) {
-      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        document.getElementById("navbar").style.height = "60px";
-        document.getElementById("logo").style.width = "80px";
-      } else {
-        document.getElementById("navbar").style.height = "80px";
-        document.getElementById("logo").style.width = "100px";
-      }
-    }
-    else {
-      document.getElementById("navbar").style.height = "60px";
-      document.getElementById("logo").style.width = "80px";
-    }
+  componentDidMount() {
+    document.addEventListener('scrollStart', this.handleCloseMenu());
   }
 
   handleCloseMenu = () => {
@@ -77,10 +58,12 @@ export default class Header extends Component {
                       <Link to="/#functions">Funcionalidades</Link>
                     </NavLink>
                     <NavLink>
-                      <Link to="/#donwload">Baixar agora</Link>
+                      <Link to="/#donwload">Baixe o app</Link>
                     </NavLink>
                     <NavLink>
-                      <Modal />
+                      <Button href="https://juno.com.br/" target="_blank">
+                        Conheça a Juno
+                      </Button>
                     </NavLink>
                   </NavList>
                 </Collapse>
