@@ -29,25 +29,25 @@ export default function Modal() {
               variants={variants}
             >
               <Content>
-                <Header>
-                  <h5 class="modal-title">Cadastro de lista de espera</h5>
-                  <Close onClick={() => setIsOpen(false)}>&times;</Close>
-                </Header>
-                <Body>
-                  <p>Nos informe seu dados de contato para confirmar o seu interesse no App Juno.</p>
-                  <p>Assim que o aplicativo for disponibilizado, você será notificado.</p>
-                  <Form name="contact" method="POST" data-netlify="true">
+                <Form name="contact" method="POST" data-netlify="true">
+                  <Header>
+                    <h5 class="modal-title">Cadastro de lista de espera</h5>
+                    <Close onClick={() => setIsOpen(false)}>&times;</Close>
+                  </Header>
+                  <Body>
+                    <p>Nos informe seu dados de contato para confirmar o seu interesse no App Juno.</p>
+                    <p>Assim que o aplicativo for disponibilizado, você será notificado.</p>
                     <FormGroup>
                       <Input type="text" id="name" name="name" placeholder="Qual é o seu Nome?" />
                     </FormGroup>
                     <FormGroup>
                       <Input type="email" id="email" name="email" placeholder="Informe seu melhor E-mail" />
                     </FormGroup>
-                  </Form>
-                </Body>
-                <Footer>
-                  <Button>Salvar</Button>
-                </Footer>
+                  </Body>
+                  <Footer>
+                    <Button type="submit">Salvar</Button>
+                  </Footer>
+                </Form>
               </Content>
             </motion.div>
           </Dialog>
