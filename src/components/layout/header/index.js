@@ -11,23 +11,6 @@ import Logo from '../../../images/Juno-Logotipo.svg'
 
 import { Section, Nav, Brand, NavList, NavLink, Toggle, Collapse } from './styles';
 
-function scrollFunction() {
-  if (window.innerWidth > 1024) {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      document.getElementById("navbar").style.height = "60px";
-      document.getElementById("logo").style.width = "80px";
-    } else {
-      document.getElementById("navbar").style.height = "80px";
-      document.getElementById("logo").style.width = "100px";
-    }
-  }
-  else {
-    document.getElementById("navbar").style.height = "60px";
-    document.getElementById("logo").style.width = "80px";
-  }
-}
-window.onscroll = () => scrollFunction();
-
 export default class Header extends Component {
   constructor(props) {
     super(props);
@@ -38,6 +21,22 @@ export default class Header extends Component {
   }
   componentDidMount = () => {
     scrollFunction();
+
+    document.addEventListener('scroll', () => {
+      if (window.innerWidth > 1024) {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          document.getElementById("navbar").style.height = "60px";
+          document.getElementById("logo").style.width = "80px";
+        } else {
+          document.getElementById("navbar").style.height = "80px";
+          document.getElementById("logo").style.width = "100px";
+        }
+      }
+      else {
+        document.getElementById("navbar").style.height = "60px";
+        document.getElementById("logo").style.width = "80px";
+      }
+    });
 
     document.addEventListener('scrollStart', this.handleCloseMenu, false);
   }

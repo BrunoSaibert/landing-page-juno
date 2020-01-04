@@ -3,8 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.footer`
   padding: 20px 0;
   color: ${props => props.theme.grayScale.light};
-  /* background: ${props => props.theme.grayScale.dark_90}; */
-  /* background: ${props => props.theme.color.primary_dark}; */
   background: ${props => props.theme.color.primary};
   border-top: 1px solid ${props => props.theme.grayScale.gray};
   
