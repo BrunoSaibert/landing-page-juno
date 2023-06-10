@@ -11,7 +11,7 @@
     "@fortawesome/react-fontawesome": "^0.1.8",
     "babel-plugin-styled-components": "^1.10.6",
     "framer-motion": "^1.7.0",
-    "gatsby": "^2.18.12",
+    "gatsby": "^4.25.7",
     "gatsby-background-image": "^0.9.12",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-hubspot": "^1.3.3",
